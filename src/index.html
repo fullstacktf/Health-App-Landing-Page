@@ -8,28 +8,11 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap"
-      rel="stylesheet"
-    />
     <title>NutriCare</title>
   </head>
-  <body class="bg-gray-300">
+  <body class="bg-gray-300 font-body">
     <div class="h-screen bg-gray-300">
-      <!-- <nav
-        class="w-screen h-16 bg-green-700 grid grid-cols-3 grid p-5 elevation-3"
-      >
-        <div class="text-2xl text-white mr-5 col-span-2">NutriCare</div>
-        <div class="md:flex justify-between hidden">
-          <div class="text-2xl text-white">Home</div>
-          <div class="text-2xl text-white">The APP</div>
-          <div class="text-2xl text-white">About us</div>
-        </div>
-        <div class="md:hidden flex justify-end">
-          <i class="fa fa-bars text-white text-2xl" aria-hidden="true"></i>
-        </div>
-      </nav> -->
-      <nav class="flex items-center justify-between flex-wrap bg-green-700 p-6">
+      <nav class="flex items-center justify-between flex-wrap bg-green-700 p-3">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img
             class="fill-current h-8 w-40 mr-2"
@@ -57,19 +40,19 @@
         >
           <div class="text-sm lg:flex-grow">
             <a
-              href="#responsive-header"
+              href="#home"
               class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
             >
               Home
             </a>
             <a
-              href="#responsive-header"
+              href="#about"
               class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"
             >
               ¿Qué es?
             </a>
             <a
-              href="#responsive-header"
+              href="#us"
               class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white"
             >
               Nosotros
@@ -85,46 +68,88 @@
         </div>
       </nav>
       <header
-        class="w-screen h-1/3 py-10 px-16 md:px-40 md:h-3/5 xl:px-64 xl:h-3/4"
+        class="w-full h-1/3 py-10 px-16 md:px-40 md:h-3/5 xl:px-64 xl:h-3/4"
         style="background-image: url(assets/main_bg.jpg); background-size: cover;"
       >
         <div
-          style="background-image: url(assets/food_background.jpg); background-size: cover;"
-          class="bg-white elevation-4 h-full block overflow-hidden flex xl:items-center justify-center items-center p-5"
+          style="background: linear-gradient(
+            rgba(0, 0, 0, 0.247), 
+            rgba(0, 0, 0, 0.247)
+          ), url(assets/food_background.jpg); background-size: cover;"
+          class="bg-white elevation-9 h-full block overflow-hidden flex xl:items-end justify-center items-end p-5"
         >
           <img
             src="assets/NutriAPP_mockup.png"
             alt="La mejor APP de nutrición en tus manos"
-            class="relative md:top-15 top-25 -left-5 left-0 h-9/10"
+            class="relative md:top-5 top-10 -left-5 left-0 h-9/10"
           />
           <div
-            class="xl:text-5xl lg:text-4xl md:text-3xl text-black elevation-6 bg-white h-1/3 xl:p-5 p-2 flex justify-center items-center"
+            class="xl:text-5xl lg:text-4xl md:text-3xl text-white h-1/3 xl:p-5 p-2 flex justify-center items-center"
           >
-            NutriCare te ayuda a llevar una mejor alimentación.
+            <strong
+              ><i
+                >NutriCare te ayuda a llevar una mejor alimentación.</i
+              ></strong
+            >
           </div>
         </div>
       </header>
-      <div class="w-full bg-gray-300 h-3/4 p-8 flex justify-around">
+      <div id="about" class="w-full bg-gray-300 h-3/4 p-8 flex justify-around">
         <div class="w-1/3 text-3xl flex items-center">
           NutriCare es una app que busca ayudarte a llevar una vida saludable y
-          completa en cuanto a los macronutrientes que necesitas para el día a
-          día.
+          completa recomendándote los macronutrientes que necesitas para el día
+          a día.
         </div>
         <div
-          class="bg-white elevation-5 w-1/3 text-3xl flex justify-around items-center flex-col text-center"
+          class="bg-white elevation-5 w-1/3 p-5 text-4xl flex justify-around items-center flex-col text-center"
         >
-          <span class="text-4xl">Ventajas</span>
+          <span class="text-5xl">Ventajas</span>
           <ul>
-            <li>Grátis</li>
+            <li>Gratis</li>
             <li>Recetas variadas</li>
             <li>Saludable</li>
+            <li>Ecológica</li>
+            <li>Divertida</li>
           </ul>
         </div>
       </div>
-      <footer
+      <div
         class="h-64"
         style="background-image: url(assets/main_bg.jpg); background-size: cover;"
-      ></footer>
+      ></div>
+      <div id="us" class="w-full bg-gray-300 h-3/4 p-8 flex justify-around">
+        <div
+          class="bg-white elevation-5 w-2/5 p-2 text-4xl flex justify-around items-center flex-col text-center"
+        >
+          <span class="text-5xl">Nosotros</span>
+          <div class="">
+            <div class="flex justify-start items-center">
+              <img
+                class="rounded-full h-32 m-5"
+                src="assets/mauri.jfif"
+                alt="Mauricio, uno de los desarrolladores de NutriCare"
+              />
+              Mauricio Cavalleri
+            </div>
+            <div class="flex justify-start items-center">
+              <img
+                class="rounded-full h-32 m-5"
+                src="assets/alex.jfif"
+                alt="Mauricio, uno de los desarrolladores de NutriCare"
+              />
+              Alex Suárez
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 text-3xl flex items-center">
+          Somos dos alumnos del curso de FrontEnd de la EOI dispuestos a hacer
+          la mejor APP.
+        </div>
+      </div>
+      <div
+        class="h-64"
+        style="background-image: url(assets/main_bg.jpg); background-size: cover;"
+      ></div>
     </div>
   </body>
 </html>

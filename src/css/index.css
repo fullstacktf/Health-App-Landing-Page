@@ -1,16 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap");
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap");
-
-@font-face {
-  font-family: "Zilla Slab";
-  font-weight: 400; /* sólo pesos soportados */
-  src: local("Zilla Slab");
-}
 
 @responsive {
   .top-10 {
