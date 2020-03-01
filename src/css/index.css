@@ -1,0 +1,61 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap");
+
+@font-face {
+  font-family: "Zilla Slab";
+  font-weight: 400; /* sólo pesos soportados */
+  src: local("Zilla Slab");
+}
+
+@responsive {
+  .top-10 {
+    top: 10%;
+  }
+  .top-15 {
+    top: 15%;
+  }
+  .top-20 {
+    top: 20%;
+  }
+  .top-25 {
+    top: 25%;
+  }
+  .top-30 {
+    top: 30%;
+  }
+  .top-35 {
+    top: 35%;
+  }
+  .top-full {
+    top: 100%;
+  }
+  .left-10 {
+    left: 10%;
+  }
+  .left-15 {
+    left: 15%;
+  }
+  .-top-10 {
+    top: -10%;
+  }
+  .-top-15 {
+    top: -15%;
+  }
+  .-left-5 {
+    left: -5%;
+  }
+  .-left-10 {
+    left: -10%;
+  }
+  .-left-15 {
+    left: -15%;
+  }
+  .filter-shadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+  }
+}
